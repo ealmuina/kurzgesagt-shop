@@ -67,7 +67,7 @@ def check_site(config):
     products = tree.xpath('//div[@class="mt-15 text-sm font-700 max-w-24 mx-auto"]/text()')
     products = list(map(str, products))
 
-    if any('12,020' in x for x in products):
+    if any('12,021' in x for x in products):
         send_mail(config)
 
     logger.info('Check made')
